@@ -132,19 +132,24 @@ header p{
     
 }
 
-.core-slider_item img {
-    width: 100%;
+.main-slider{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/*.core-slider_item img {
+    width: 100%;
+}*/
 .core-slider_control-nav-item {
     display: block;
     width: 40px;
     height: 40px;
     margin: 5px 0px;
     background: none;
-   background-image: url(style-img/dot-backgr-1.jpg);
+   background-image: url(style-img/plate1.png);
    background-position: center center;
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    
     border: 2px solid #fff;
 }
