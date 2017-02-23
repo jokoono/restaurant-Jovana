@@ -159,3 +159,35 @@ header p{
     left: 70%;
    
 }
+.slider-relative{
+    position: relative;
+   
+
+}
+.slider-absolute{
+    position: absolute;
+    color:#fff;
+    width: 80%;
+    left: 10%;
+    top: 5px;
+
+    -webkit-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+   
+}
+
+.slider-absolute h2{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Playball', cursive;
+    color:#603b35;
+    
+}
+.slider-absolute p{
+    display:none;
+}
+.core-slider_item img {
+    position: relative;
+    margin: 0 auto;
+}

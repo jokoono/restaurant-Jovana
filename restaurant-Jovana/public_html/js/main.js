@@ -14,7 +14,7 @@ $(document).ready(function () {
         loop: true,
 
         // enable autoplay
-        slideshow: true,
+        slideshow: false,
 
         // enable auto resize depending on the screen size
         resize: true,
