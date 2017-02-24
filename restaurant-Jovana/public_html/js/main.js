@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-    $('.search').click(function () {
+    $('.search').click(function (e) {
+        e.preventDefault();
         $('.form-group').toggle();
 
     });

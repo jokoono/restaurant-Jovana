@@ -62,7 +62,7 @@ header p{
     background-color: #d25513;
 }
 
-/* ----NAV STYLE ---*/
+/* ----NAVIGATION STYLE ---*/
 
 .navbar-brand > img{
     position: relative;
@@ -109,7 +109,7 @@ header p{
     margin-bottom: 5px;
 }
 .navbar-nav .search a{
-    
+
     line-height: 20px;
     width:40px;
     height: 40px;
@@ -120,7 +120,7 @@ header p{
     font-size: 13px;
     color:#fff;
     position: relative;
-    
+
     left: 20%;
 }
 .navbar-default .navbar-nav > li.search > a:hover, .navbar-default .navbar-nav > li.search > a:focus {
@@ -129,65 +129,135 @@ header p{
 }
 .navbar {
     margin-bottom: 0;
-    
+
 }
+/* ------  .main-slider  style ------ */
 
 .main-slider{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
-/*.core-slider_item img {
-    width: 100%;
-}*/
+.main-slider .title{
+    position: relative;
+    display:inline-block;
+    top:25px;
+    z-index: 100;
+}
+.main-slider .title h2{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Playball', cursive;
+    color:#603b35;
+}
+.main-slider .title p{
+    font-weight: bold;
+    font-size: 12px;
+}
+p.line:before{
+    content: '';
+    height: 3px;
+    width: 15px;
+    background: transparent;
+    border: 1px solid red;
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+    left: -10px;
+    border-top-color:#d25513;
+    border-left:none;
+    border-right:none;
+    border-bottom-color: #d25513;
+}
+p.line:after{
+    content: '';
+    height: 3px;
+    width: 15px;
+    background: transparent;
+    border: 1px solid red;
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+    right: -10px;
+    border-top-color:#d25513;
+    border-left:none;
+    border-right:none;
+    border-bottom-color: #d25513;
+}
 .core-slider_control-nav-item {
     display: block;
     width: 40px;
     height: 40px;
-    margin: 5px 0px;
+    margin:20px 0px;
     background: none;
-   background-image: url(style-img/plate1.png);
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   
+    background-image: url(style-img/plate1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 2px solid #fff;
 }
 .core-slider_control-nav {
-   
-    bottom: 10%;
-    left: 70%;
-   
+    bottom: 37%;
+    left: 80%;
 }
-.slider-relative{
+.main-slider .slider-relative{
     position: relative;
-   
-
-}
-.slider-absolute{
-    position: absolute;
-    color:#fff;
-    width: 80%;
-    left: 10%;
-    top: 5px;
-
-    -webkit-transform: translate(0, 5px);
-    -ms-transform: translate(0, 5px);
-    transform: translate(0, 5px);
-   
-}
-
-.slider-absolute h2{
-    font-weight: bold;
-    font-size: 50px;
-    font-family: 'Playball', cursive;
-    color:#603b35;
-    
-}
-.slider-absolute p{
-    display:none;
 }
 .core-slider_item img {
     position: relative;
     margin: 0 auto;
+}
+.main-slider .price{
+    width: 120px;
+    height: 120px;
+    background: #d25513;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 57%;
+}
+.main-slider .price p:first-child{
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'Playball', cursive;
+}
+.main-slider .price p:last-child{
+    font-size: 15px;
+    margin-top: -15px;
+    font-weight: bold;
+}
+/* --------- .tab-section  style ----------*/
+.tab-section{
+    padding: 30px 0;
+}
+.tab-section p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 15px;
+}
+.tab-section h2{
+    font-family: 'Playball', cursive;
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+.nav-pills{
+    display: block;
+    background: #f2f2f2;
+    border-radius: 15px;
+}
+.nav-pills > li>a{
+    color:#72777b;
+}
+.nav-pills > li {
+    float: none;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    border-radius: 30px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #d25513;
+    border-radius: 30px;
 }
