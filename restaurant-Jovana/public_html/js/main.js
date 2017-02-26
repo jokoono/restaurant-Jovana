@@ -76,5 +76,46 @@ $(document).ready(function () {
 
     });
 
+
+    $('.breakfast-slide').slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: false,
+        arrows:true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    arrows:true
+                    
+                    
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                     arrows:false
+                    
+                }
+            },
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows:false
+                }
+            }
+           
+        ]
+    });
+
+    
 });
 

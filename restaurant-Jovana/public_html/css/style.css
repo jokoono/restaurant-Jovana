@@ -8,6 +8,9 @@
 
     font-family: 'PT Serif', serif;
 */
+@font-face {
+    src: url(fonts/slick.eot);
+}
 
 body{
     font-family: 'PT Sans', sans-serif;  
@@ -246,6 +249,7 @@ p.line:after{
     display: block;
     background: #f2f2f2;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 .nav-pills > li>a{
     color:#72777b;
@@ -260,4 +264,51 @@ p.line:after{
     color: #fff;
     background-color: #d25513;
     border-radius: 30px;
+}
+.slick-prev {
+    left: 0px;
+}
+.slick-next {
+    right: 0px;
+}
+.slick-prev:before, .slick-next:before {
+        font-size: 20px;
+        color: #ccc;
+        display: none;
+    }
+.tab-section .tab-content article{
+    border:1px solid #eee;
+    margin-left:5px;
+    margin-right: 5px;
+    font-family: 'PT Serif', serif;
+}
+.tab-section .tab-content article h5{
+    color:#000;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    height: 30px;
+}
+.tab-section .tab-content article p{
+    color:#929292;
+    font-size: 12px;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+.tab-section .tab-content article a.btn{
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+.tab-section .tab-content article a.btn-default{
+    margin-bottom: 10px;
+    border-color: #eee;
+    color:#d25513;
+}
+.tab-section .tab-content .social{
+    border-top:1px solid #eee;
+    padding: 10px 3px 0 3px;
+   
+}
+.tab-section .tab-content .social a{
+    color:#bcbcbc;
 }
