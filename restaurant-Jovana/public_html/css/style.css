@@ -272,15 +272,16 @@ p.line:after{
     right: 0px;
 }
 .slick-prev:before, .slick-next:before {
-        font-size: 20px;
-        color: #ccc;
-        display: none;
-    }
+    font-size: 20px;
+    color: #ccc;
+    display: none;
+}
 .tab-section .tab-content article{
     border:1px solid #eee;
-    margin-left:5px;
+    margin-left:10px;
     margin-right: 5px;
     font-family: 'PT Serif', serif;
+    max-width: 270px;
 }
 .tab-section .tab-content article h5{
     color:#000;
@@ -294,10 +295,24 @@ p.line:after{
     font-family: 'PT Serif', serif;
     font-weight: normal;
     letter-spacing: 0;
+
+}
+.tab-section .tab-content article p.date:after{
+    content: '';
+    height: 2px;
+    width: 40%;
+    background: #d25513;
+    position: absolute;
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    top: 13px;
+    left: 30%;
 }
 .tab-section .tab-content article a.btn{
     border-radius: 20px;
     padding: 6px 20px;
+    font-size: 12px;
 }
 .tab-section .tab-content article a.btn-default{
     margin-bottom: 10px;
@@ -307,8 +322,114 @@ p.line:after{
 .tab-section .tab-content .social{
     border-top:1px solid #eee;
     padding: 10px 3px 0 3px;
-   
+
 }
 .tab-section .tab-content .social a{
     color:#bcbcbc;
 }
+
+/* -------- .testimonials section   style ------*/
+
+.testimonials{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonials .transparent-color{
+    padding: 20px 0;
+}
+.testimonials h2{
+    font-size: 27px;
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+}
+.testimonials p{
+    font-size: 11px;
+}
+.testimonials .slick-dotted.slick-slider {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.testimonials .text{
+    text-align: center;
+    color: #fff;
+}
+.people-slide .people figure{
+    display:inline-block;
+    border: 2px solid #d25513;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+.people-slide .people{
+    color:#fff;
+}
+.people-slide .people img{
+    border:1px solid transparent;
+    border-radius: 50%;
+}
+.testimonials .slick-prev {
+    left: -10px;
+    top:40%;
+}
+.testimonials .slick-next {
+    right: -10px;
+    top:40%;
+}
+.testimonials .slick-prev:before{
+    content: "\f177";
+    font-family: FontAwesome;
+    line-height: 12px;
+}
+.testimonials .slick-prev,
+.testimonials .slick-next{
+    border:none;
+}
+.testimonials .slick-prev:before,
+.testimonials .slick-next:before {
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        opacity: 1;
+    }
+.testimonials .slick-next:before{
+    content: "\f178";
+    font-family: FontAwesome;
+    line-height: 12px;
+}
+
+
+/*.mis-stage {
+background-color: #fff;
+}
+.mis-slider {
+margin-top: 138px;
+height: 80px;
+background-color: #eee;
+}
+.mis-slider li a {
+text-decoration: none;
+color: #666;
+display: block;
+}
+.mis-slider li figcaption {
+font-size: 1.5em;
+}
+.mis-slider li img {
+
+max-width: 270px;
+width: 100%;
+border-radius: 135px;
+border: none;
+}
+.mis-slide {
+width: 360px;
+height: 360px;
+padding: 40px;
+margin-top: -138px
+}
+.mis-nav-buttons a {
+color: #fff;
+}*/

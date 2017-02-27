@@ -53,6 +53,11 @@
         display: inline-block;
         border-radius: 30px;
     }
+    .tab-section .tab-content article{
+        margin-left:5px;
+        margin-right: 5px;
+    }
+
     .tab-section .tab-content article h5{
         height: auto;
     }
@@ -82,20 +87,23 @@
     .tab-section h2{
         margin-bottom:75px;
     }
+    .nav-pills{
+        margin-bottom: 50px;
+    }
     .slick-prev:before, .slick-next:before {
         font-size: 20px;
         color: #ccc;
         display: block;
     }
     .slick-prev{
-        left:-28px;
+        left:-26px;
         border: 1px solid #ccc;
         border-radius: 50%;
         width: 27px;
         height: 27px;
     }
     .slick-next{
-        right: -28px;
+        right: -26px;
         border: 1px solid #ccc;
         border-radius: 50%;
         width: 27px;
@@ -112,9 +120,18 @@
         line-height: 12px;
     }
     .tab-section .tab-content article{
-    margin-left: 10px;
-margin-right: 10px;
-}
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tab-section .tab-content article h5{
+        font-size: 16px;
+    }
+    .tab-section .tab-content article p{
+        font-size: 14px;
+    }
+    .tab-section .tab-content article a.btn{
+        font-size: 14px;
+    }
 
 
 

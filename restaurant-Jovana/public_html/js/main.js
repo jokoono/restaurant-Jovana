@@ -83,39 +83,50 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: false,
-        arrows:true,
+        arrows: true,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
-                    arrows:true
-                    
-                    
+                    arrows: true
+
+
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                     arrows:false
-                    
+                    arrows: false
+
                 }
             },
             {
-                breakpoint: 0,
+                breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows:false
+                    arrows: false
                 }
             }
-           
+
         ]
     });
 
-    
+
+    $('.people-slide').slick({
+       
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
+
+
 });
 
