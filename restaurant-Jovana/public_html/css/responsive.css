@@ -62,12 +62,16 @@
         height: auto;
     }
     /* ------ .testimonials section style ----*/   
+    .testimonials .transparent-color{
+        padding: 50px 0;
+        color: #fff;
+    }
     .testimonials h2 {
         font-size: 50px;
     }
     .testimonials p{
-    font-size: 14px;
-}
+        font-size: 14px;
+    }
 
 
 }
@@ -138,6 +142,36 @@
     }
     .tab-section .tab-content article a.btn{
         font-size: 14px;
+    }
+    /*----- .testimonials section style---*/
+    .testimonials h2 + p{
+        font-size: 18px;
+    }
+    /*-------  .special-offers  section  style---*/  
+    .special-offers {
+        padding: 80px 0;
+    }
+    .special-offers h4{
+        font-size: 25px;
+    }
+    .special-offers .offers h5{
+        font-size: 25px;
+    }
+    .special-offers .offers h6 {
+    font-size: 16px;
+    }
+    /*------- .services section  style ---*/
+    .services{
+        padding: 50px 0;
+    }
+    .services .flower + p{
+        margin-bottom: 50px;
+    }
+    .services h2{
+        font-size: 50px;
+    }
+    .services h2 + p{
+        font-size: 18px;
     }
 
 

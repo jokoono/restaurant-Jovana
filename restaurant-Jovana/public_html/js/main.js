@@ -77,48 +77,106 @@ $(document).ready(function () {
     });
 
 
-    $('.breakfast-slide').slick({
-        infinite: true,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: false,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    arrows: true
+    function showSlider(a) {
+        $(a).slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: false,
+            arrows: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        arrows: true
 
 
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows: false
+
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    arrows: false
 
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            }
+            ]
+        });
+    }
 
-        ]
+    showSlider('.breakfast-slide');
+
+    $('#bfas-tab').click(function () {
+        console.log(this);
+        $('.breakfast').css("display", "block");
+        $('.salate').css("display", "none");
+        $('.drinks').css("display", "none");
+        $('.grill').css("display", "none");
+        $('.desserts').css("display", "none");
+
+    });
+    $('#salate-tab').click(function () {
+        $('.breakfast').css("display", "none");
+        $('.salate').css("display", "block");
+        $('.drinks').css("display", "none");
+        $('.grill').css("display", "none");
+        $('.desserts').css("display", "none");
+
+    });
+    $('#drinks-tab').click(function () {
+        $('.breakfast').css("display", "none");
+        $('.salate').css("display", "none");
+        $('.drinks').css("display", "block");
+        $('.grill').css("display", "none");
+        $('.desserts').css("display", "none");
+
+    });
+    $('#grill-tab').click(function () {
+        $('.breakfast').css("display", "none");
+        $('.salate').css("display", "none");
+        $('.drinks').css("display", "none");
+        $('.grill').css("display", "block");
+        $('.desserts').css("display", "none");
+
+    });
+    $('#desserts-tab').click(function () {
+        $('.breakfast').css("display", "none");
+        $('.salate').css("display", "none");
+        $('.drinks').css("display", "none");
+        $('.grill').css("display", "none");
+        $('.desserts').css("display", "block");
+
+    });
+    $('#salate-tab').one("click", function () {
+        showSlider('.salate-slide');
+
+    });
+    $('#drinks-tab').one("click", function () {
+        showSlider('.drinks-slide');
+
+    });
+    $('#grill-tab').one("click", function () {
+        showSlider('.grill-slide');
+
+    });
+    $('#desserts-tab').one("click", function () {
+        showSlider('.desserts-slide');
     });
 
 
     $('.people-slide').slick({
-       
+
         dots: true,
         infinite: true,
         speed: 300,
