@@ -345,14 +345,14 @@ p.line:after{
 }
 .testimonials p{
     font-size: 11px;
+    font-weight: bold;
 }
 .testimonials .slick-dotted.slick-slider {
     max-width: 300px;
     margin: 0 auto;
     margin-top: 30px;
 }
-.testimonials .text{
-    text-align: center;
+.testimonials .transparent-color{
     color: #fff;
 }
 .people-slide .people figure{
@@ -401,35 +401,3 @@ p.line:after{
 }
 
 
-/*.mis-stage {
-background-color: #fff;
-}
-.mis-slider {
-margin-top: 138px;
-height: 80px;
-background-color: #eee;
-}
-.mis-slider li a {
-text-decoration: none;
-color: #666;
-display: block;
-}
-.mis-slider li figcaption {
-font-size: 1.5em;
-}
-.mis-slider li img {
-
-max-width: 270px;
-width: 100%;
-border-radius: 135px;
-border: none;
-}
-.mis-slide {
-width: 360px;
-height: 360px;
-padding: 40px;
-margin-top: -138px
-}
-.mis-nav-buttons a {
-color: #fff;
-}*/

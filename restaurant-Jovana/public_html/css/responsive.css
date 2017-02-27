@@ -61,6 +61,13 @@
     .tab-section .tab-content article h5{
         height: auto;
     }
+    /* ------ .testimonials section style ----*/   
+    .testimonials h2 {
+        font-size: 50px;
+    }
+    .testimonials p{
+    font-size: 14px;
+}
 
 
 }
