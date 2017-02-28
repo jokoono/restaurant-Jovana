@@ -74,6 +74,13 @@
     .testimonials p{
         font-size: 14px;
     }
+    .booking {
+        padding: 50px 0;
+    }
+    .pictures .pic {
+        height: 150px;
+
+    }
 
 
 }
@@ -166,7 +173,7 @@
         font-size: 25px;
     }
     .special-offers .offers h6 {
-    font-size: 16px;
+        font-size: 16px;
     }
     /*------- .services section  style ---*/
     .services{
@@ -180,6 +187,15 @@
     }
     .services h2 + p{
         font-size: 18px;
+    }
+    .booking h2 {
+        font-size: 50px;
+    }
+    .booking h2 + p {
+        font-size: 18px;
+    }
+    .pictures .pic {
+        height: 200px;
     }
 
 
@@ -200,6 +216,13 @@
     .special-offers figure{
         padding: 5px
     }
+    .pictures .pic {
+        height: 250px;
+    }
+    .booking {
+        padding: 70px 0;
+    }
+
 
 
 }

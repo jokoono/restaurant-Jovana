@@ -16,6 +16,7 @@
         <link href="css/slick.css" rel="stylesheet" type="text/css"/>
         <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/slider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css"/>
 
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
@@ -927,31 +928,85 @@
                     </div>
                 </div>
             </section>
-            <section class='booking text-center'>
-                <div class="container">
-                <h2>Book a table</h2>
-                <p class='line text-uppercase'>reservation online booking</p>
-                <img src="img/flower.png" alt=""/>
-                <p>Curabitur quas nets lacus ets nulat iaculis loremis etis nisle 
-                    varius vitae seditum fugiatum ligula aliquam qui sequi. Lorem 
-                    ipsum dolor sit amet, consectetur adipiscing elit rutrum eleif 
-                    arcu sit aspernatur nets fugit, sed quia.</p>
+            <section class='booking'>
+                <div class="container text-center">
+                    <h2>Book a table</h2>
+                    <p class='line text-uppercase'>reservation online booking</p>
+                    <img src="img/flower.png" alt=""/>
+                    <p>Curabitur quas nets lacus ets nulat iaculis loremis etis nisle 
+                        varius vitae seditum fugiatum ligula aliquam qui sequi. Lorem 
+                        ipsum dolor sit amet, consectetur adipiscing elit rutrum eleif 
+                        arcu sit aspernatur nets fugit, sed quia.</p>
                 </div>
-                <div class='container chef-back' style="background-image: url('img/chef.png')">
+                <div class='container chef-back' style="background-image: url('img/plate.jpg')">
                     <div class='row'>
                         <div class='col-md-6 col-md-offset-6'>
                             <form method="get" action="">
                                 <fieldset>
-                                    <h2>Reservations</h2>
-                                    <input class="form-control" type="text" name="name" value="" placeholder="Name"><br>
-                                    <input class="form-control" type="email" name="email" value="" placeholder="Email address..."><br>
+                                    <h2 class='text-center'>Reservations</h2>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="name" value="" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" name="email" value="" placeholder="Email address...">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                            <input class="form-control" size="16" type="text" value="" readonly>
+                                            <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <div class="input-group date form_time" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                                    <input class="form-control" size="16" type="text" value="" readonly>
+                                                    <span class="input-group-addon"><span class="fa fa-angle-down"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <input type="tel" name='phone' class="form-control" value='' placeholder="Phone number...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>2 people</option>
+                                            <option>3 people</option>
+                                            <option>4 people</option>
+                                            <option>5 people</option>
+                                        </select>
+                                    </div>
                                 </fieldset>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="pictures clearfix">
+                <article class="pic" style="background-image: url('img/fivePict1.jpg')"></article>
+                <article class="pic" style="background-image: url('img/fivePict2.jpg')"></article>
+                <article class="pic" style="background-image: url('img/fivePict3.jpg')"></article>
+                <article class="pic" style="background-image: url('img/fivePict4.jpg')"></article>
+                <article class="pic" style="background-image: url('img/fivePict5.jpg')"></article>
+            </section>
         </main>
+        <footer style='background-image: url(img/mainCourse.png)'>
+            <div>
+            <a href="#">
+                <img class="img-responsive center-block" src="img/logo.png" alt=""/>
+            </a>
+                <ul class='list-inline text-center'>
+                    <li><a href='#'><span class='fa fa-facebook'></span></a></li>
+                    <li><a href='#'><span class='fa fa-facebook'></span></a></li>
+                    <li><a href='#'><span class='fa fa-facebook'></span></a></li>
+                    <li><a href='#'><span class='fa fa-facebook'></span></a></li>
+                    <li><a href='#'><span class='fa fa-facebook'></span></a></li>
+                </ul>
+            </div>
+        </footer>
 
 
 
@@ -966,7 +1021,7 @@
         <script src="js/coreSlider.js" type="text/javascript"></script>
         <script src="js/slick.min.js" type="text/javascript"></script>
         <script src="js/slider.min.js" type="text/javascript"></script>
-
+        <script src="js/bootstrap-datetimepicker.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>
