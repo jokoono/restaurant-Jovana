@@ -24,9 +24,9 @@
         margin-left: 30px;
     }
     /* ---- .main-slider  style------ */
-    .core-slider_control-nav-item:first-of-type,
-    .core-slider_control-nav-item:nth-of-type(2),
-    .core-slider_control-nav-item:last-of-type{
+    .main-slider .core-slider_control-nav-item:first-of-type,
+    .main-slider .core-slider_control-nav-item:nth-of-type(2),
+    .main-slider .core-slider_control-nav-item:last-of-type{
         width: 50px;
         height: 50px;
     }
@@ -34,7 +34,7 @@
         font-size: 55px;
     }
     .main-slider .title p{
-        font-size: 14px;
+        font-size: 16px;
     }
     /* ------ .tab-section  style -------*/  
     .tab-section {
@@ -78,8 +78,24 @@
         padding: 50px 0;
     }
     .pictures .pic {
-        height: 150px;
-
+        height: 200px;
+    }
+    /* ---- second page ABOUT -------*/   
+    .about div{
+        padding: 50px 0;
+    }
+    .about img {
+        width: 70px;
+    }
+    .about h2{
+        font-size: 55px;
+        letter-spacing: 1px;
+    }
+    .about h5{
+        font-size: 16px;
+    }
+    .about h5 + span{
+        margin-bottom: 50px;
     }
 
 
@@ -103,9 +119,9 @@
 
         font-size: 65px;
     }
-    .core-slider_control-nav-item:first-of-type,
-    .core-slider_control-nav-item:nth-of-type(2),
-    .core-slider_control-nav-item:last-of-type{
+    .main-slider .core-slider_control-nav-item:first-of-type,
+    .main-slider .core-slider_control-nav-item:nth-of-type(2),
+    .main-slider .core-slider_control-nav-item:last-of-type{
         width: 70px;
         height: 70px;
     }
@@ -162,6 +178,9 @@
     .testimonials h2 + p{
         font-size: 18px;
     }
+    .testimonials .slick-dotted.slick-slider {
+        max-width: 450px;
+    }
     /*-------  .special-offers  section  style---*/  
     .special-offers {
         padding: 80px 0;
@@ -177,7 +196,7 @@
     }
     /*------- .services section  style ---*/
     .services{
-        padding: 50px 0;
+        padding: 70px 0;
     }
     .services .flower + p{
         margin-bottom: 50px;
@@ -195,9 +214,19 @@
         font-size: 18px;
     }
     .pictures .pic {
-        height: 200px;
+        height: 250px;
+    }
+    footer div{
+        background-color: rgba(210,85,19,.8);
+        padding: 20px 0;
     }
 
+    .about div {
+        padding: 100px 0;
+    }
+    .about p{
+        padding: 0 200px;
+    }
 
 
 
@@ -208,7 +237,7 @@
 @media(min-width:1200px){
 
     /* ------ .main-slider style ---*/    
-    .core-slider_control-nav-item {
+    .main-slider .core-slider_control-nav-item {
         width: 70px;
         height: 70px;
 
@@ -216,11 +245,15 @@
     .special-offers figure{
         padding: 5px
     }
-    .pictures .pic {
-        height: 250px;
-    }
+
     .booking {
         padding: 70px 0;
+    }
+    .about div {
+        padding: 150px 0;
+    }
+    .about p{
+        padding: 0 350px;
     }
 
 

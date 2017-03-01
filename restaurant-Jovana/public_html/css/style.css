@@ -188,7 +188,7 @@ p.line:after{
     border-right:none;
     border-bottom-color: #d25513;
 }
-.core-slider_control-nav-item:first-of-type{
+.main-slider .core-slider_control-nav-item:first-of-type{
     display: block;
     width: 40px;
     height: 40px;
@@ -200,7 +200,7 @@ p.line:after{
     background-size: cover;
     border: 2px solid #fff;
 }
-.core-slider_control-nav-item:nth-of-type(2) {
+.main-slider .core-slider_control-nav-item:nth-of-type(2) {
     display: block;
     width: 40px;
     height: 40px;
@@ -212,7 +212,7 @@ p.line:after{
     background-size: cover;
     border: 2px solid #fff;
 }
-.core-slider_control-nav-item:last-of-type{
+.main-slider .core-slider_control-nav-item:last-of-type{
     display: block;
     width: 40px;
     height: 40px;
@@ -224,17 +224,17 @@ p.line:after{
     background-size: cover;
     border: 2px solid #fff;
 }
-.core-slider_control-nav-item.is-active {
+.main-slider .core-slider_control-nav-item.is-active {
     opacity: .6;
 }
-.core-slider_control-nav {
+.main-slider .core-slider_control-nav {
     bottom: 37%;
     left: 80%;
 }
 .main-slider .slider-relative{
     position: relative;
 }
-.core-slider_item img {
+.main-slider .core-slider_item img {
     position: relative;
     margin: 0 auto;
 }
@@ -599,4 +599,158 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
+footer div{
+    background-color: rgba(210,85,19,.8);
+    padding: 10px 0;
+}
+footer ul{
+    margin:20px 0;
+}
+.list-inline > li {
 
+    margin: 0 5px;
+}
+footer ul li a{
+    color: #fff;
+    padding: 2px;
+}
+footer ul a .fa{
+    font-size: 15px;
+}
+footer ul a:hover, 
+footer ul a:focus {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px white;
+    padding: 2px;
+}
+footer p{
+    font-size: 12px;
+    color:#fff;
+}
+footer p:last-of-type{
+    font-size: 10px;
+}
+
+
+
+
+.about{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.about div{
+    background-color: rgba(0,0,0,.7);
+    padding: 30px 0;
+    color:#fff;
+}
+.about h2{
+    font-size: 35px;
+    font-family: 'Playball', cursive;
+    display: inline-block;
+}
+.about img{
+    width:40px;
+    position: relative;
+    top:-10px;
+}
+.about h5{
+    font-weight: bold;
+    color:#d8d8d7;
+}
+.about h5 + span{
+    width:5px;
+    height: 5px;
+    border:1px solid #fff;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.about h5 + span:before{
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 80px;
+    background: #83817f;
+    position: absolute;
+    left:30px;
+}
+.about h5 + span:after{
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 80px;
+    background: #83817f;
+    position: absolute;
+    right:30px;
+}
+.section-slider{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.section-slider .trans-color{
+    background: rgba(255,255,255,.4);
+}
+.section-slider .core-slider_control-nav-item.is-active {
+    opacity: .6;
+    border: 1px solid white;
+    position: relative;
+}
+.section-slider .core-slider_control-nav-item.is-active:before{
+    content: " ";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+
+}
+.history{
+    padding: 40px 0;
+}
+.history h2{
+    font-size: 35px;
+    font-family: 'Playball', cursive;
+}
+.history .line{
+    font-weight: bold;
+}
+.history img:first-of-type{
+    margin-bottom: 30px;
+}
+.history p:nth-of-type(2){
+    margin-bottom: 30px;
+    color:#72777b;
+}
+.history .block-quote{
+    color:#d25616;
+    font-family: 'Playball', cursive;
+    display: inline;
+    font-size: 18px;
+}
+.history .quotLeft{
+    position: relative;
+    bottom: 10px;
+}
+.history .quoteRight{
+    position: relative;
+    top:10px;
+}
+.history p:last-of-type{
+    margin-top: 30px;
+    color:#72777b;
+}
+.history .taste{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
