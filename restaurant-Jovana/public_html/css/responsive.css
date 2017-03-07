@@ -97,6 +97,16 @@
     .about h5 + span{
         margin-bottom: 50px;
     }
+    .appetizers .lunch li span:first-child:after{
+        content:'....Why not try one, or three, or a dozen';
+    }
+    .lunch{
+        margin: 0 25px;
+    }
+    .appetizers h3{
+        margin-left: 25px;
+    }
+
 
 
 }
@@ -227,6 +237,8 @@
     .about p{
         padding: 0 200px;
     }
+
+
 
 
 

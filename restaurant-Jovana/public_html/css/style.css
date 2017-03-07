@@ -720,6 +720,7 @@ footer p:last-of-type{
 .history h2{
     font-size: 35px;
     font-family: 'Playball', cursive;
+    margin-top: 0px;
 }
 .history .line{
     font-weight: bold;
@@ -749,8 +750,133 @@ footer p:last-of-type{
     margin-top: 30px;
     color:#72777b;
 }
+.history .taste figure{
+    overflow: hidden;
+}
 .history .taste{
-    background-position: center center;
+    position: relative;
+}
+.history .taste img{
+    max-height: 450px;
+    transform: translateX(-50px);
+}
+.history .taste div{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border: 1px solid #bbbab6;
+    border-radius: 50%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-90px);
+    box-shadow: 0 0 0 10px #ebeae6;
+    background: #ebeae6;
+    opacity:.8;
+}
+.history .taste div p{
+    margin-top:30%;
+    color:#d45415;
+    font-family: 'Playball', cursive;
+    font-size: 38px;
+    line-height: 30px;
+}
+.chef{
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*------  classic_menu.html strana ----*/ 
+.appetizers{
+    padding: 30px 0;
+}
+.appetizers h2{
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+}
+.appetizers p{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.appetizers h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.appetizers h3 span{
+    font-family: 'PT Sans', sans-serif;
+    color:#72777b;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: normal;
+}
+.lunch{
+    overflow-x: hidden;
+}
+.lunch li span{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.lunch li{
+    margin-bottom: 20px;
+}
+.lunch li:last-of-type{
+    margin-bottom: 0;
+}
+.lunch li:before{
+    float:left;
+    width:0;
+    white-space: nowrap;
+    color: #333;
+    content:'.....................................................................................................................................................................................................................................................................'
+}
+.lunch li span:first-child{
+    background: #fff;
+}
+.lunch li .price{
+    float:right;
+    background: #fff;
+    font-style: normal;
+}
+/*----- .breakfast section style -----*/
+.breakfast{
+    padding: 50px 0;
+}
+.breakfast h2{
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+}
+.breakfast .line{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.breakfast .lunch span{
+    font-style: normal;
+}
+/*---- .dessert section style-----*/
+.dessert{
+    padding: 50px 0;
+}
+.dessert h2{
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+}
+.dessert .line{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.dessert .lunch span{
+    font-style: normal;
+}
+.lunch p{
+    color:#929292;
+    font-size: 11px;
+    font-family: 'PT Serif', serif;
+}
+.specials{
+    padding-top: 0;
 }
