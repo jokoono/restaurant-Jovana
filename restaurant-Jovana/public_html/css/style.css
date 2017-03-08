@@ -18,6 +18,43 @@ body{
 a:focus{
     outline:none;
 }
+input::-webkit-input-placeholder {
+    color: #000 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #000 !important;  
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #000 !important;  
+}
+
+input:-ms-input-placeholder {  
+    color: #000 !important;  
+}
+textarea::-webkit-input-placeholder {
+    color: #000 !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #000 !important;  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: #000 !important;  
+}
+
+textarea:-ms-input-placeholder {  
+    color: #000 !important;  
+}
+
+.form-control{
+    border-radius: 0;
+    border:1px solid #d5d5d5;
+    box-shadow: none;
+    height: 45px;
+}
 /* ----  HEADER STYLE  --*/
 header{
     background-color: #d25513;
@@ -123,8 +160,10 @@ header p{
     font-size: 13px;
     color:#fff;
     position: relative;
-
     left: 20%;
+}
+.navbar-nav .search .form-control{
+    height: 35px;
 }
 .navbar-default .navbar-nav > li.search > a:hover, .navbar-default .navbar-nav > li.search > a:focus {
     color: #fff;
@@ -568,12 +607,37 @@ p.line:after{
     margin-bottom: 30px;
 }
 .booking fieldset {
-    border: 5px solid #f5f5f5;
+    border: 5px solid rgba(245,245,245, .7);
     padding: 10px 30px;
 }
 .booking .form-control{
     border-radius: 0;
 }
+.booking .form-group .btn-default {
+    color: #fff;
+    background-color: #d25513;
+    border-color: #d25513;
+    width: 60%;
+    height: 50px;
+    font-weight: bold;
+}
+.booking .form-group .btn {
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+select.form-control {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    background-image:  url('style-img/select-arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    color:#000;
+}
+
 .booking .input-group-addon{
     border-radius: 0;
 }
@@ -593,6 +657,9 @@ p.line:after{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+.pictures a:hover .pic{
+    transform:scale(1.2);
 }
 footer{
     background-position: center center;
@@ -632,9 +699,6 @@ footer p:last-of-type{
     font-size: 10px;
 }
 
-
-
-
 .about{
     background-size: cover;
     background-repeat: no-repeat;
@@ -646,7 +710,7 @@ footer p:last-of-type{
     color:#fff;
 }
 .about h2{
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Playball', cursive;
     display: inline-block;
 }
@@ -668,6 +732,7 @@ footer p:last-of-type{
     display: inline-block;
     position: relative;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 .about h5 + span:before{
     content: '';
@@ -712,7 +777,6 @@ footer p:last-of-type{
     padding: 0px;
     width: 20px;
     height: 20px;
-
 }
 .history{
     padding: 40px 0;
@@ -785,7 +849,31 @@ footer p:last-of-type{
     background-repeat: no-repeat;
     background-position: center center;
 }
-
+.chef-bcgr{
+    background-color: rgba(255,255,255,.7);
+    padding: 50px 0 0;
+}
+.chef h2{
+    font-family: 'Playball', cursive;
+    font-size: 35px;
+}
+.chef h5{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.chef h5 + img{
+    margin:25px 0;
+}
+.chef p{
+    color:#7d8185;
+}
+.chef a{
+    font-family: 'Playball', cursive;
+    font-size: 21px;
+    color:#7d8185;
+    margin-top: 25px;
+    display: inline-block;
+}
 /*------  classic_menu.html strana ----*/ 
 .appetizers{
     padding: 50px 0;
@@ -848,8 +936,8 @@ footer p:last-of-type{
 }
 
 .morning .second-bcgr{
-   padding: 100px 0;
-   background-color: rgba(0,0,0,.3);
+    padding: 100px 0;
+    background-color: rgba(0,0,0,.3);
 }
 .morning h2{
     display: inline-block;
@@ -872,20 +960,20 @@ footer p:last-of-type{
     top:-20px;
 }
 
-/*----- .breakfast section style -----*/
-.breakfast{
+/*----- .morning-breakfast section style -----*/
+.morning-breakfast{
     padding: 50px 0;
 }
-.breakfast h2{
+.morning-breakfast h2{
     font-family: 'Playball', cursive;
     font-size: 40px;
 }
-.breakfast .line{
+.morning-breakfast .line{
     font-weight: bold;
     margin-bottom: 50px;
     font-size: 15px;
 }
-.breakfast .lunch span{
+.morning-breakfast .lunch span{
     font-style: normal;
 }
 /*---- .dessert section style-----*/
@@ -910,4 +998,108 @@ footer p:last-of-type{
 }
 .specials{
     padding-top: 0;
+}
+/* ---- contact_us.html page ----*/
+.contact{
+    padding: 40px 0;
+}
+.contact h2{
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+}
+.contact p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.contact h4{
+    font-family: 'Playball', cursive;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contact img{
+    margin-bottom: 20px;
+}
+
+.contact textarea.form-control{
+    height: 140px;
+}
+.contact .btn{
+    border-radius: 30px;
+    background: #d25513;
+    border:1px solid #d25513;
+
+}
+.contact .btn-default{
+    color:#fff;
+    font-weight: bold;
+}
+.map{
+    height: 550px;
+}
+.embed-responsive .embed-responsive-item, 
+.embed-responsive iframe, 
+.embed-responsive embed, 
+.embed-responsive object, 
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    border: 0;
+}
+.locations{
+    padding: 40px 0;
+}
+.locations h2{
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+}
+.locations .line{
+    color:#333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.locations img{
+    margin-bottom: 50px;
+}
+.locations article{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.locations h4{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.locations .london:after{
+    content:'';
+    height: 1px;
+    display: block;
+    width: 20%;
+    background: #c0bebd;
+    position: relative;
+    top: 13px;
+    left: 40%;
+}
+.locations p{
+    color:#72777b;
+}
+.locations a{
+    color:#333;
+    font-weight: bold;
+    margin-top:25px;
+    display:inline-block;
+    border-bottom: 1px solid #c0bebd;
+    padding-bottom: 5px;
+}
+.locations a .fa{
+    margin-left: 10px;
+}
+.locations a:hover, a:focus {
+    color: #d25513;
+    text-decoration: none;
+    border-bottom-color: #d25513;
 }

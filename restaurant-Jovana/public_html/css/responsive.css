@@ -77,6 +77,9 @@
     .booking {
         padding: 50px 0;
     }
+    .booking .form-group .btn-default {
+        width: 50%;
+    }
     .pictures .pic {
         height: 200px;
     }
@@ -237,17 +240,20 @@
         background-color: rgba(210,85,19,.8);
         padding: 20px 0;
     }
-
     .about div {
         padding: 100px 0;
     }
     .about p{
         padding: 0 200px;
     }
+    /* ---- classic_menu.html page style ---*/   
     .appetizers h2 {
         font-size: 50px;
     }
-    .breakfast h2{
+    .morning-breakfast {
+        padding: 90px 0;
+    }
+    .morning-breakfast h2{
         font-size: 50px;
     }
     .dessert h2 {
@@ -257,19 +263,40 @@
         font-size: 50px;
     }
     .appetizers {
-    padding: 90px 0;
-}
-    .breakfast {
         padding: 90px 0;
     }
     .pasta {
         padding: 90px 0 0;
     }
     .specials{
-        padding: 90px 0;
+        padding: 40px 0 90px;
     }
     .dessert {
         padding: 40px 0 90px;
+    }
+    .contact {
+        padding: 80px 0;
+    }
+    .contact h2{
+        font-size: 55px;
+    }
+    .contact p {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .contact h4 {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .locations {
+        padding: 80px 0;
+    }
+    .locations h2{
+        font-size: 55px;
+    }
+    .locations .line {
+        font-size: 20px;
+        letter-spacing: 1px;
     }
 
 

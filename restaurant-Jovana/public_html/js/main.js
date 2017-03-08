@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('.search').click(function (e) {
         e.preventDefault();
-        $('.form-group').toggle();
+        $('.search .form-group').toggle();
 
     });
 
