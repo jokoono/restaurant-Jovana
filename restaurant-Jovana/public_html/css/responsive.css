@@ -121,6 +121,9 @@
 
 }
 @media(min-width:992px){
+    h2 + p{
+        font-size: 18px;
+    }
     /* ----- HEADER STYLE------*/    
     header p{
         display:block;
@@ -220,6 +223,15 @@
     }
     .services .flower + p{
         margin-bottom: 50px;
+    }
+    .history h2{
+        font-size: 50px;
+    }
+    .chef h2{
+        font-size:55px;
+    }
+    .chef h5{
+        font-size: 18px;
     }
     .services h2{
         font-size: 50px;

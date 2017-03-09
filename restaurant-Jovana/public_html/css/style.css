@@ -544,7 +544,6 @@ p.line:after{
 }
 .services h2{
     font-family: 'Playball', cursive;
-    font-weight: bold;
     font-size: 35px;
 }
 .services h2 + p{
@@ -660,6 +659,7 @@ select.form-control {
 }
 .pictures a:hover .pic{
     transform:scale(1.2);
+    transition: 1s ease;
 }
 footer{
     background-position: center center;
@@ -850,8 +850,11 @@ footer p:last-of-type{
     background-position: center center;
 }
 .chef-bcgr{
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,.8);
     padding: 50px 0 0;
+}
+.chef article{
+    max-width: 470px;
 }
 .chef h2{
     font-family: 'Playball', cursive;
@@ -871,7 +874,7 @@ footer p:last-of-type{
     font-family: 'Playball', cursive;
     font-size: 21px;
     color:#7d8185;
-    margin-top: 25px;
+    margin-top: 15px;
     display: inline-block;
 }
 /*------  classic_menu.html strana ----*/ 
@@ -1102,4 +1105,11 @@ footer p:last-of-type{
     color: #d25513;
     text-decoration: none;
     border-bottom-color: #d25513;
+}
+
+
+
+.gm-style .place-card-large {
+    padding: 9px 4px 9px 11px;
+    visibility: hidden;
 }
