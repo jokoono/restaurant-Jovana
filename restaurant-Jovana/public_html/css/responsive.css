@@ -116,6 +116,12 @@
         font-size: 16px;
         letter-spacing: 1.5px;
     }
+    .locations article {
+    text-align: left;
+}
+.locations .london::after {
+    left:0;
+}
 
 
 

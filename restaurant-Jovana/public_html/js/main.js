@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    
     $('.search').click(function (e) {
         e.preventDefault();
         $('.search .form-group').toggle();
@@ -75,6 +76,7 @@ $(document).ready(function () {
         cloneItems: 0
 
     });
+    
 
 
     function showSlider(a) {
@@ -208,8 +210,7 @@ $(document).ready(function () {
 
 
    
-
-
+  
 
 
 

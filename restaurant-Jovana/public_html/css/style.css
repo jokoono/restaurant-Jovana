@@ -649,17 +649,19 @@ select.form-control {
 .booking .form_time .input-group-addon{
     background-color: #fff;
 }
+
 .pictures .pic{
     float: left;
     width:20%;
     height: 100px;
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    transition: 1s ease;
 }
 .pictures a:hover .pic{
-    transform:scale(1.2);
-    transition: 1s ease;
+   background-size: 110%;
+    
 }
 footer{
     background-position: center center;
@@ -1038,7 +1040,7 @@ footer p:last-of-type{
     font-weight: bold;
 }
 .map{
-    height: 550px;
+    max-height: 550px;
 }
 .embed-responsive .embed-responsive-item, 
 .embed-responsive iframe, 
@@ -1106,10 +1108,113 @@ footer p:last-of-type{
     text-decoration: none;
     border-bottom-color: #d25513;
 }
+/* ---- blog_list.html page style -----*/
+
+.blog{
+    padding: 40px 0;
+}
+.blog .blog_left{
+    border:1px solid #e8e7e4;
+    max-height: 320px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.blog .blog_left h3{
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+}
+.blog span{
+    color:#929292;
+    font-family: 'PT Serif', serif;
+}
+.blog p,
+.blog a{
+    color:#72777b;
+}
+.blog p span:first-of-type{
+    margin-right: 15px;
+}
+.blog figure{
+    width:50%;
+    float:left;
+}
+.blog .blog_left div{
+    padding: 0 30px;
+    width: 50%;
+    float: left;
+}
+.blog .blog_left a:first-of-type{
+    margin-right: 15px;
+}
+.blog .blog_left a.btn{
+    display: block;
+    width:160px;
+    border-radius: 30px;
+    margin:20px 0;
+    font-weight: bold;
+    height: 50px;
+    color: #333;
+}
+.blog .blog_left a.btn-default{
+    background: #f2f2f2;
+    padding: 15px 12px;
+}
+.blog .blog-right{
+    text-align: center;
+    padding:30px;
+    border:1px solid #e8e7e4;
+    margin-bottom: 30px;
+}
+.blog-right h3{
+    font-family: 'Playball', cursive;
+}
+.blog-right h5{
+    border-bottom: 1px solid #e8e7e4;
+    padding-bottom: 15px;
+}
+.blog .blog_man{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f2f2f2;
+    display: inline-block;
+}
+.blog .categories{
+    padding: 5px 30px;
+}
+.blog-right ul li{
+    margin-bottom: 15px;
+}
+.blog-right ul li span{
+    font-family: 'PT Sans', sans-serif;  
+}
+.categories h3{
+    border-bottom: 1px solid #e8e7e4;
+    padding-bottom: 15px;
+}
 
 
 
-.gm-style .place-card-large {
-    padding: 9px 4px 9px 11px;
-    visibility: hidden;
+
+
+
+
+
+
+.overlay {
+    background:transparent; 
+    position:absolute; 
+    width:100%;
+    height:100%; /* your iframe height */
+    top:0;
+    left: 0;
+    z-index: 100;
+
+}
+.place-card-large {
+    z-index: -1000000;
+    position: absolute;
+    display: none !important;
 }
