@@ -148,6 +148,12 @@
         font-family: 'PT Serif', serif;
         font-size: 20px;
     }
+    .form-inline .form-control {
+        width: 292px;
+    }
+    .description .nav-tabs > li {
+        float: left;
+    }
 
 
 
@@ -342,6 +348,13 @@
     .aside .tags {
         padding: 5px 15px 30px;
     }
+    .form-inline .form-control {
+        width: 160px;
+    }
+    .description .tab-pane{
+        min-height: 260px;
+
+    }
 
 
 
@@ -380,6 +393,9 @@
     }
     .aside .banner::after {
         transform: rotate(-34deg);
+    }
+    .form-inline .form-control {
+        width: 210px;
     }
 
 
