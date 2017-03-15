@@ -80,9 +80,6 @@
     .booking .form-group .btn-default {
         width: 50%;
     }
-    .pictures .pic {
-        height: 200px;
-    }
     /* ---- second page ABOUT -------*/   
     .about div{
         padding: 50px 0;
@@ -116,12 +113,41 @@
         font-size: 16px;
         letter-spacing: 1.5px;
     }
+    #map {
+        height: 400px;
+        width: 100%;
+        background-color: grey;
+    }
     .locations article {
-    text-align: left;
-}
-.locations .london::after {
-    left:0;
-}
+        text-align: left;
+    }
+    .locations .london::after {
+        left:0;
+    }
+    .blog .blog_left{
+        max-height: 320px;
+    }
+    .blog .blog_left figure{
+        height: auto;
+    }
+    .blog .blog_left div{
+        padding: 0 30px;
+
+    }
+    .blog figure{
+        width:50%;
+        float:left;
+    }
+    .blog .blog_left div{
+        padding: 0 30px;
+        width: 50%;
+        float: left;
+    }
+    .blog .blog_left h3{
+        font-weight: bold;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+    }
 
 
 
@@ -251,9 +277,6 @@
     .booking h2 + p {
         font-size: 18px;
     }
-    .pictures .pic {
-        height: 250px;
-    }
     footer div{
         background-color: rgba(210,85,19,.8);
         padding: 20px 0;
@@ -316,6 +339,9 @@
         font-size: 20px;
         letter-spacing: 1px;
     }
+    .aside .tags {
+        padding: 5px 15px 30px;
+    }
 
 
 
@@ -346,6 +372,16 @@
     .about p{
         padding: 0 350px;
     }
+    .aside .tags {
+        padding: 5px 30px 30px;
+    }
+    .aside .banner {
+        max-width: 300px;
+    }
+    .aside .banner::after {
+        transform: rotate(-34deg);
+    }
+
 
 
 
