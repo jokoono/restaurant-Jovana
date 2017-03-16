@@ -153,7 +153,7 @@
                                 <p>Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. 
                                     Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla 
                                     magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi. </p>
-                                
+
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group form-inline">
@@ -178,6 +178,14 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="input-group order-quantity" style="margin-top: 15px;">
+                                    <span class="input-group-btn"><button class="btn btn-default minus">-</button></span>
+                                    <input  type="text" value="1" class="quantity form-control" >
+                                    <span class="input-group-btn"><button class="btn btn-default plus">+</button></span>
+                                </div>
+                               
+
                                 <span class="text-uppercase">share</span>
                                 <ul class="list-inline">
                                     <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -301,6 +309,26 @@
                     controls: true,
                     galleryMargin: 0
 
+                });
+
+                $('.minus').click(function () {
+                    var kolicina = parseInt($(this).parent().next().val());
+                    if (kolicina < 2 || isNaN(kolicina)) {
+                        $(this).parent().next().val(1);
+                    } else {
+                        kolicina -= 1;
+                        $(this).parent().next().val(kolicina);
+                    }
+                });
+
+                $('.plus').click(function () {
+                    var kolicina = parseInt($(this).parent().prev().val());
+                    if (!isNaN(kolicina)) {
+                        kolicina += 1;
+                        $(this).parent().prev().val(kolicina);
+                    } else {
+                        $(this).parent().prev().val(1);
+                    }
                 });
 
 

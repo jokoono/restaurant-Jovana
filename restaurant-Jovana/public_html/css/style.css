@@ -655,7 +655,7 @@ select.form-control {
     float: left;
     width:20%;
     overflow: hidden;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 }
 .pictures a:hover img{
     transition: 1s linear;
@@ -1255,6 +1255,9 @@ footer p:last-of-type{
     margin-left:5px;
 }
 /*  shop_list.html psge style ---*/
+.fa-heart{
+    color:#d25513;
+}
 .shop-list{
     padding: 30px 0;
 }
@@ -1428,6 +1431,25 @@ input[type=range]::-ms-thumb {
 .gallery-slider .review ul{
     display: inline-block;
 }
+.gallery-slider .review select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url('style-img/select-arrow.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    color: #000;
+}
+.gallery-slider .input-group{
+    width: 200px;
+}
+.gallery-slider .input-group button{
+    height: 45px;
+}
+
+
 
 
 .description{
@@ -1467,6 +1489,11 @@ input[type=range]::-ms-thumb {
     border:1px solid #e8e8e6;
 }
 
+#map{
+    
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
 
 
 
