@@ -27,7 +27,7 @@
     max-width: 100%;
     overflow: hidden;
     position: relative;
-   left:60px;
+    left:60px;
 }
 .lSSlideWrapper > .lightSlider:after {
     clear: both;
@@ -138,7 +138,7 @@
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
     border-radius: 5px;
-    
+
 }
 .lSSlideOuter .lSPager.lSGallery img {
     display: block;
@@ -161,14 +161,16 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('style-img/controls.png');
+    background-image: url('style-img/slider-arrow.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
     margin-top: -16px;
-    opacity: 0.5;
+    opacity: 1;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
+    background-color: #d25513;
+    border-radius: 50%;
 }
 .lSAction > a:hover {
     opacity: 1;
@@ -216,14 +218,18 @@
     margin-top: 0;
 }
 .lSSlideOuter.vertical .lSAction > .lSNext {
-    background-position: 31px -31px;
+    background-position: center center;
     bottom: 10px;
     top: auto;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
 }
 .lSSlideOuter.vertical .lSAction > .lSPrev {
-    background-position: 0 -31px;
+    background-position: center center;
     bottom: auto;
     top: 10px;
+    background-repeat: no-repeat;
+
 }
 /* vertical */
 
@@ -383,17 +389,17 @@
 }
 /*/  GRab cursor */
 .lightSlider.lsGrab > * {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab;
 }
 .lightSlider.lsGrabbing > * {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: grabbing;
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -o-grabbing;
+    cursor: -ms-grabbing;
+    cursor: grabbing;
 }

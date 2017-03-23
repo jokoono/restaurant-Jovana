@@ -154,7 +154,13 @@
     .description .nav-tabs > li {
         float: left;
     }
-
+    .gallery-slider h3{
+        margin-top: 0;
+    }
+    .gallery-slider ul.social-list{
+        position: relative;
+        bottom: 15px;
+    }
 
 
 }
@@ -177,7 +183,6 @@
     }
     /*------ .main-slider  style  -----*/    
     .main-slider h2{
-
         font-size: 65px;
     }
     .main-slider .core-slider_control-nav-item:first-of-type,
@@ -350,6 +355,9 @@
     }
     .form-inline .form-control {
         width: 160px;
+    }
+    .shop-list {
+        padding: 60px 0;
     }
     .description .tab-pane{
         min-height: 260px;
