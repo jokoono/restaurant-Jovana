@@ -1559,25 +1559,25 @@ input[type=range]::-ms-thumb {
     font-size: 35px;
 }
 /*----- blog_details.html page style-----*/
-.media{
+.media-blog{
     border: 1px solid #e8e7e4;
     padding: 20px 30px 0;
     color:#72777b;
 }
-.media h2,
-.media h3{
+.media-blog h2,
+.media-blog h3{
     color:#333;
     font-weight: bold;
     font-family: 'PT Serif', serif;
 }
-.media p.comment{
+.media-blog p.comment{
     border: 1px solid #e8e7e4;
     padding: 10px 0;
 }
-.media p span{
+.media-blog p span{
     margin: 0 6px;
 }
-.media img{
+.media-blog img{
     margin-bottom: 20px;
 }
 blockquote {
@@ -1588,16 +1588,16 @@ blockquote {
     font-family: 'Playball', cursive;
 }
 
-.media .links{
+.media-blog .links{
     border-bottom: 1px solid #e8e7e4;
     padding: 20px 0;
     border-top: 1px solid #e8e7e4;
 }
-.media .tags{
+.media-blog .tags{
     position: relative;
     top:10px;
 }
-.media .tags li a{
+.media-blog .tags li a{
     color:#929292;
 }
 .left{
@@ -1618,7 +1618,78 @@ blockquote {
 .right p{
     color:#333;
 }
+.posts{
+    padding: 25px 0;
+    font-family: 'PT Serif', serif;
+}
+.posts h4{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.posts h5{
+    font-weight: bold;
+}
+.posts .thumbnail{
+    padding: 0;
+}
+.chef-cooker{
+    border:1px solid #e8e7e4;
+    padding: 20px;
+}
+.chef-cooker h3{
+    font-weight: bold;
+}
+.chef-cooker figure{
+    max-width: 150px;
+    overflow: hidden;
+    margin: auto;
+}
+.chef-cooker h3 + p{
+    font-size: 12px;
+    color:#b3b3b3;
+    margin-top:-5px;
+}
+.chef-cooker p{
+    color:#929292;
+    margin-bottom: 20px;
+}
+.chef-cooker figure img{
+    border:3px solid #e1e1e1;
+}
+.chef-cooker .social-list li span{
+    background: #d25513;
+    border:1px solid #d25513;
+    color:#fff;
+}
+.comments{
+    margin-top:30px;
+    border: 1px solid #e8e7e4;
+    padding: 10px 30px;
+}
+.comments .media p:first-of-type{
+    padding-bottom: 15px;
+}
+.comments .media h3{
+    border-bottom: 1px solid #e8e7e4;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.media-body hr{
+    position: absolute;
+    width: 90%;
+    background: #000;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.media-list .first{
+    padding: 15px 0;
+}
 
+.media-list .second{
+    border-top:1px solid #e8e7e4;
+    padding: 15px 0;
+}
 
 #map{
 
