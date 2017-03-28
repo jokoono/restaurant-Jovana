@@ -161,6 +161,52 @@
         position: relative;
         bottom: 15px;
     }
+    .media-blog p span{
+        display: inline-block;
+        margin: 5px 30px;
+    }
+    .blog-details .links ul:first-of-type{
+        text-align: left;
+    }
+    .blog-details .links ul:last-of-type{
+        text-align: right;
+    }
+    .media-blog .tags{
+        position: relative;
+        top:10px;
+    }
+    .left{
+        border-right: 1px solid #e8e7e4;
+    }
+    .comments .media .media-object{
+        margin-right:25px;
+    }
+    .comments .media h5{
+        display:inline-block;
+    }
+    .comments .media h5 + span{
+        margin-left: 15px;
+    }
+    .media-list .first{
+        padding: 15px 0;
+        margin-left: 0;
+    }
+    .comments .pages {
+        text-align: center;
+    }
+    .not-found {
+    padding: 60px 0;
+}
+.not-found h1{
+    font-size: 120px;
+}
+.not-found h1 span{
+    width: 90px;
+    height: 90px;
+}
+.not-found h2{
+    font-size: 40px;
+}
 
 
 }
@@ -350,6 +396,9 @@
         font-size: 20px;
         letter-spacing: 1px;
     }
+    .aside{
+        margin-top: 0;
+    }
     .aside .tags {
         padding: 5px 15px 30px;
     }
@@ -361,8 +410,31 @@
     }
     .description .tab-pane{
         min-height: 260px;
-
     }
+    .blog-details{
+        padding: 80px 0;
+    }
+    .media-blog p span {
+        font-size: 14px;
+    }
+    .not-found {
+    padding: 90px 0 120px;
+}
+.not-found h1{
+    font-size: 180px;
+}
+.not-found h1 span{
+    width: 140px;
+    height: 140px;
+    margin: 0 15px;
+}
+.not-found h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.not-found .input-group{
+    margin-top: 50px;
+}
 
 
 

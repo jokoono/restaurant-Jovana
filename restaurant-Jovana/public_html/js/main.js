@@ -100,10 +100,10 @@ $(document).ready(function () {
             ]
         });
     }
-if($('.breakfast-slide').length>0){
-     showSlider('.breakfast-slide');
-}
-   
+    if ($('.breakfast-slide').length > 0) {
+        showSlider('.breakfast-slide');
+    }
+
 
     $('#bfas-tab').click(function () {
         console.log(this);
@@ -206,9 +206,29 @@ if($('.breakfast-slide').length>0){
         e.preventDefault();
         $(this).find('span').toggleClass('fa-heart-o fa-heart');
     });
-
-
-
+    
+    
+    if ($('.filter-gallery').length > 0) {
+        $(function () {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    }
+    
+   
+//    $(".filtr-container").showmore({
+//        childElement: "div",
+//        visible: 8,
+//        showMoreText: "<span>LOAD MORE</span>",
+//
+//        showLessText: "<span>LOAD LESS</span>",
+//
+//        showMoreClass: "show_more",
+//
+//        showLessClass: "show_less"
+//
+//    });
+//   
 
 });
 

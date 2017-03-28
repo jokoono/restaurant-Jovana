@@ -5,16 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Contact us</title>
+        <title>Gallery</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i|Playball|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 
+        <link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+        <link href="css/filter-gallery.css" rel="stylesheet" type="text/css"/>
+
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
-
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -44,7 +46,6 @@
                                 <li><a href="#">End1</a></li>
                                 <li><a href="#">End2</a></li>
                                 <li><a href="#">End3</a></li>
-
                             </ul>
                         </li>
                     </ul>
@@ -76,7 +77,7 @@
                         <li><a href="#">reservation</a></li>
                         <li><a href="shop_list.html">gallery</a></li>
                         <li><a href="blog_list.html">pages</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="contact_us.html">contact</a></li>
                         <li class="search">
                             <a href="#">
                                 <span class="fa fa-search"></span>
@@ -93,7 +94,7 @@
             <section class="about text-center" style="background-image: url(img/main1-back.jpg)">
                 <div>
                     <img src="img/decorationLeft.png" alt=""/>
-                    <h2>Contact us</h2>
+                    <h2>Shop product</h2>
                     <img src="img/decorationRight.png" alt=""/>
                     <h5 class="text-uppercase">send us a message</h5>
                     <span></span>
@@ -102,129 +103,97 @@
                         big or small.</p>
                 </div>
             </section>
-            <section class='contact text-center'>
-                <div class='container'>
-                    <div class='row'>
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <h2>Contact us today</h2>
-                            <p class="line text-uppercase">have a question for us</p>
-                            <img src="img/flower.png" alt=""/>
-                            <h4>Phone: + 1 85 258 9857</h4>
-                            <form data-toggle="validator" role="form" method="get" action="">
-                                <div class="row">
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <input class="form-control" type='text' name="name" value="" placeholder="Name" pattern="^[_A-z]{1,}$" data-minlength="6" maxlength="15" required="">
-                                        <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <input class="form-control" type='text' name="name" value="" placeholder="Email" data-minlength="6" maxlength="15" required="">
-                                        <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Message" data-minlength="20" maxlength="200" required=""></textarea>
-                                <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-default form-control text-uppercase" type="submit">send message</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="map">
-                <div id="map"></div>
-            </section>
-
-            <section class="locations">
-                <div class="container text-center">
-                    <h2>Our Locations</h2>
-                    <p class="line text-uppercase">visit us</p>
-                    <img src="img/flower.png" alt=""/>
-                </div>
+            <section class="filter-gallery text-center">
                 <div class="container">
+
+                    <!-- Filter Controls - Simple Mode -->
                     <div class="row">
-                        <div class="col-sm-4">
-                            <article>
-                                <h4 class="text-uppercase london">london center</h4>
-                                <address>
-                                    <p>Royal Plate Indoors,</p>
-                                    <p>22nd Sunrise street, Royal Club Avenue,</p>
-                                    <p>London, UK</p>
-                                </address>
-                            </article>
-                            <article>
-                                <h4 class="text-uppercase">opening hours</h4>
-                                <p>Mon - Fri: 08:00 am - 10:00 pm</p>
-                                <p>Sat - Sun: 10:00 am - 11:00 pm</p>
-                            </article>
-                            <article>
-                                <h4 class="text-uppercase">contact</h4>
-                                <p>+00 42 587 9685</p>
-                                <p>info@rody-restaurant.com</p>
-                                <a href="#">
-                                    <span class="text-uppercase">get directions </span>
-                                    <span class="fa fa-angle-double-right"></span>
+                        <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+                        for an unfiltered gallery and then the values of your categories to filter between them -->
+                        <ul class="simplefilter">
+
+                            <li class="active" data-filter="all">All</li>
+                            <li data-filter="1">Appetizers</li>
+                            <li data-filter="2">Breakfast</li>
+                            <li data-filter="3">Pasta</li>
+                            <li data-filter="4">Specials</li>
+                            <li data-filter="5">Pizza</li>
+                            <li data-filter="6">Desserts</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+                        attribute, which starts from the value 1 and goes up from there -->
+                        <div class="filtr-container">
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="Busy streets">
+                                <a href="img/gallery/pizza-cutl.jpg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/pizza-cutl.jpg" alt="sample image">
                                 </a>
-                            </article>
-                        </div>
-                        <div class="col-sm-4">
-                            <article>
-                                <h4 class="text-uppercase london">london center</h4>
-                                <address>
-                                    <p>Royal Plate Indoors,</p>
-                                    <p>22nd Sunrise street, Royal Club Avenue,</p>
-                                    <p>London, UK</p>
-                                </address>
-                            </article>
-                            <article>
-                                <h4 class="text-uppercase">opening hours</h4>
-                                <p>Mon - Fri: 08:00 am - 10:00 pm</p>
-                                <p>Sat - Sun: 10:00 am - 11:00 pm</p>
-                            </article>
-                            <article>
-                                <h4 class="text-uppercase">contact</h4>
-                                <p>+00 42 587 9685</p>
-                                <p>info@rody-restaurant.com</p>
-                                <a href="#">
-                                    <span class="text-uppercase">get directions </span>
-                                    <span class="fa fa-angle-double-right"></span>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="Luminous night">
+                                <a href="img/gallery/pizza2.jpg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/pizza2.jpg" alt="sample image">
                                 </a>
-                            </article>
-                        </div>
-                        <div class="col-sm-4">
-                            <article>
-                                <h4 class="text-uppercase london">london center</h4>
-                                <address>
-                                    <p>Royal Plate Indoors,</p>
-                                    <p>22nd Sunrise street, Royal Club Avenue,</p>
-                                    <p>London, UK</p>
-                                </address>
-                            </article>
-                            <article>
-                                <h4 class="text-uppercase">opening hours</h4>
-                                <p>Mon - Fri: 08:00 am - 10:00 pm</p>
-                                <p>Sat - Sun: 10:00 am - 11:00 pm</p>
-                            </article>
-                            <article>
-                                <h4 class="text-uppercase">contact</h4>
-                                <p>+00 42 587 9685</p>
-                                <p>info@rody-restaurant.com</p>
-                                <a href="#">
-                                    <span class="text-uppercase">get directions </span>
-                                    <span class="fa fa-angle-double-right"></span>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="6" data-sort="City wonders">
+                                <a href="img/gallery/dessert1.jpg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/dessert1.jpg" alt="sample image">
                                 </a>
-                            </article>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="In production">
+                                <a href="img/gallery/appetizers1.jpeg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/appetizers1.jpeg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Industrial site">
+                                <a href="img/gallery/pasta1.jpg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/pasta1.jpg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Peaceful lake">
+                                <a href="img/gallery/breakfas2.jpg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/breakfas2.jpg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="City lights">
+                                <a href="img/gallery/pasta2.jpg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/pasta2.jpg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
+                                <a href="img/gallery/breakfast1.jpeg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/breakfast1.jpeg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="6" data-sort="Restless machines">
+                                <a href="img/gallery/dessert2.jpeg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/dessert2.jpeg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="Restless machines">
+                                <a href="img/gallery/pizza3.jpeg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/pizza3.jpeg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Restless machines">
+                                <a href="img/gallery/appetizers2.jpeg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/appetizers2.jpeg" alt="sample image">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" data-sort="Restless machines">
+                                <a href="img/gallery/specials.jpeg" data-lightbox="one">
+                                    <img class="img-responsive" src="img/gallery/specials.jpeg" alt="sample image">
+                                </a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
             </section>
+
             <section class="pictures clearfix">
                 <a href="#"><article class="pic">
                         <img class="img-responsive" src="img/pic_1.jpg" alt=""/>
@@ -262,30 +231,20 @@
         </footer>
 
 
+
+
+
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <script>
-            var map;
-            function initMap() {
-                // Create the map with no initial style specified.
-                // It therefore has default styling.
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: -33.86, lng: 151.209},
-                    zoom: 13,
-                    mapTypeControl: false,
-                    scrollwheel: false
-                });
+        <script src="js/lightbox.min.js" type="text/javascript"></script>
 
-            }
-
-
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX7QYQ1XPcXFV9E96SsX59I_D5yFrO7j4&callback=initMap">
-        </script>
-        <script src="js/validator.js" type="text/javascript"></script>
+        <script src="js/jquery.filterizr.js" type="text/javascript"></script>
+        <!--        <script src="js/jquery.showmore.js" type="text/javascript"></script>-->
         <script src="js/main.js" type="text/javascript"></script>
+
     </body>
 </html>
