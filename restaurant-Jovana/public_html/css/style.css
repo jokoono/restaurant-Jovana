@@ -1843,10 +1843,14 @@ blockquote p{
 }
 
 /* ---gallery.html style ---*/
+.filter-gallery{
+    padding: 30px 0;
+}
 .show_more{
     display:block;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .show_more span{
     border:1px solid #d25513;

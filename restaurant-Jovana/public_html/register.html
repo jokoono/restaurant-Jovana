@@ -5,15 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Gallery</title>
+        <title>Register</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i|Playball|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-
-        <link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
-        <link href="css/filter-gallery.css" rel="stylesheet" type="text/css"/>
 
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
@@ -103,96 +100,47 @@
                         big or small.</p>
                 </div>
             </section>
-
-            <section class="filter-gallery text-center">
+            <section class="register">
                 <div class="container">
-
-                    <!-- Filter Controls - Simple Mode -->
                     <div class="row">
-                        <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
-                        for an unfiltered gallery and then the values of your categories to filter between them -->
-                        <ul class="simplefilter">
-
-                            <li class="active" data-filter="all">All</li>
-                            <li data-filter="1">Appetizers</li>
-                            <li data-filter="2">Breakfast</li>
-                            <li data-filter="3">Pasta</li>
-                            <li data-filter="4">Specials</li>
-                            <li data-filter="5">Pizza</li>
-                            <li data-filter="6">Desserts</li>
-                        </ul>
-                    </div>
-
-                    <div class="row">
-                        <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
-                        attribute, which starts from the value 1 and goes up from there -->
-                        <div class="filtr-container">
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="Busy streets">
-                                <a href="img/gallery/pizza-cutl.jpg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/pizza-cutl.jpg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="Luminous night">
-                                <a href="img/gallery/pizza2.jpg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/pizza2.jpg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="6" data-sort="City wonders">
-                                <a href="img/gallery/dessert1.jpg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/dessert1.jpg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="In production">
-                                <a href="img/gallery/appetizers1.jpeg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/appetizers1.jpeg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Industrial site">
-                                <a href="img/gallery/pasta1.jpg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/pasta1.jpg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Peaceful lake">
-                                <a href="img/gallery/breakfas2.jpg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/breakfas2.jpg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="City lights">
-                                <a href="img/gallery/pasta2.jpg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/pasta2.jpg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
-                                <a href="img/gallery/breakfast1.jpeg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/breakfast1.jpeg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="6" data-sort="Restless machines">
-                                <a href="img/gallery/dessert2.jpeg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/dessert2.jpeg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="Restless machines">
-                                <a href="img/gallery/pizza3.jpeg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/pizza3.jpeg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Restless machines">
-                                <a href="img/gallery/appetizers2.jpeg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/appetizers2.jpeg" alt="sample image">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" data-sort="Restless machines">
-                                <a href="img/gallery/specials.jpeg" data-lightbox="one">
-                                    <img class="img-responsive" src="img/gallery/specials.jpeg" alt="sample image">
-                                </a>
-                            </div>
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase">sing in</h3>
+                            <p>Hello! Welcome to your account.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label>Username or E-mail address</label>
+                                    <input type="email" name="username" value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" name="password" value="" class="form-control">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label><input type="checkbox" name="remember"> Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <a href="#">Forgot your pasword?</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Login</button>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href=""></a>
+                                    </div>
+                                    <div class="col-sm-6"></div>
+                                </div>
+                            </form>
                         </div>
+                        <div class="col-md-6"></div>
                     </div>
-
                 </div>
-
             </section>
+
 
             <section class="pictures clearfix">
                 <a href="#"><article class="pic">

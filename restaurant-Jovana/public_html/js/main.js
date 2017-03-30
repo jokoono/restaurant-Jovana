@@ -216,19 +216,19 @@ $(document).ready(function () {
     }
     
    
-//    $(".filtr-container").showmore({
-//        childElement: "div",
-//        visible: 8,
-//        showMoreText: "<span>LOAD MORE</span>",
-//
-//        showLessText: "<span>LOAD LESS</span>",
-//
-//        showMoreClass: "show_more",
-//
-//        showLessClass: "show_less"
-//
-//    });
-//   
+    $(".filtr-container").showmore({
+        childElement: "div",
+        visible: 8,
+        showMoreText: "<span>LOAD MORE</span>",
+
+        showLessText: "<span>LOAD LESS</span>",
+
+        showMoreClass: "show_more",
+
+        showLessClass: "show_less"
+
+    });
+   
 
 });
 
